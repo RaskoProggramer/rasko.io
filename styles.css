@@ -1,0 +1,244 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #111;
+    color: #eee;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 4px solid #fff;
+}
+  
+.service-section {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.service-section a {
+    margin-right: 1rem;
+    color: #4fd1c5;
+    text-decoration: none;
+}
+  
+form {
+    display: flex;
+    flex-direction: column;
+}
+  
+form input, form textarea {
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+  
+form button {
+    padding: 0.75rem;
+    background: #4fd1c5;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #111;
+    font-weight: bold;
+}
+  
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    margin-top: 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 1rem;
+}
+  
+.navbar .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #4fd1c5;
+}
+  
+.navbar .hamburger {
+    font-size: 2rem;
+    color: #eee;
+    display: none;
+    cursor: pointer;
+}
+  
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+  
+.nav-links li a {
+    color: #eee;
+    text-decoration: none;
+}
+  
+@media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #222;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 60%;
+      padding: 1rem;
+    }
+  
+.nav-links.show {
+      display: flex;
+}
+  
+.hamburger {
+      display: block;
+    }
+}
+  
+section {
+    padding: 1rem 0.5rem;
+    margin: 0 auto;
+    max-width: 800px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+  
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.music-links,
+.code-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.music-links a,
+.code-links a {
+  color: #4fd1c5;
+  text-decoration: none;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid #4fd1c5;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.music-links a:hover,
+.code-links a:hover {
+  background: #4fd1c5;
+  color: #111;
+}
+
+h2, h3 {
+    margin-bottom: 0.5rem;
+}
+  
+p {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+header {
+    background-image: url('images/rasko.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    color: #088828;
+    position: relative;
+    text-align: center;
+    padding: 2rem;
+}
+
+header .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 12px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+  
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 4px solid #4fd1c5;
+}
+
+header h1 {
+    margin: 0.5rem 0 0;
+}
+  
+header p {
+    margin: 0.3rem 0 0;
+}
+  
+.music-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+    text-align: left;
+    font-size: 1rem;
+  }
+  
+  .music-list li {
+    margin-bottom: 0.8rem;
+  }
+  
+  .music-video-thumbnail {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .music-links,
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .music-links a,
+  .social-links a {
+    color: #4fd1c5;
+    text-decoration: none;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid #4fd1c5;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+  }
+  
+  .music-links a:hover,
+  .social-links a:hover {
+    background: #4fd1c5;
+    color: #111;
+  }
+  
