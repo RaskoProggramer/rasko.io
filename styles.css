@@ -31,6 +31,16 @@ form {
     display: flex;
     flex-direction: column;
 }
+
+form select {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0 1rem 0;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #575555;
+}
+  
   
 form input, form textarea {
     margin: 0.5rem 0;
@@ -152,6 +162,10 @@ section.show {
 h2, h3 {
     margin-bottom: 0.5rem;
 }
+
+h1, h2, h3, h4 {
+    text-align: center;
+}
   
 p {
     margin-top: 0;
@@ -204,41 +218,50 @@ header p {
     margin-bottom: 1rem;
     text-align: left;
     font-size: 1rem;
-  }
+}
   
-  .music-list li {
+.music-list li {
     margin-bottom: 0.8rem;
-  }
+}
   
-  .music-video-thumbnail {
+.music-video-thumbnail {
     max-width: 100%;
     border-radius: 8px;
     margin-top: 1rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  }
+}
   
-  .music-links,
-  .social-links {
+.music-links,
+.social-links {
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin-top: 1rem;
     flex-wrap: wrap;
-  }
+}
   
-  .music-links a,
-  .social-links a {
+.music-links a,
+.social-links a {
     color: #4fd1c5;
     text-decoration: none;
     padding: 0.3rem 0.8rem;
     border: 1px solid #4fd1c5;
     border-radius: 6px;
     transition: background 0.3s ease;
-  }
+}
   
-  .music-links a:hover,
-  .social-links a:hover {
+.music-links a:hover,
+.social-links a:hover {
     background: #4fd1c5;
     color: #111;
-  }
+}
+  
+form select {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0 1rem 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
   

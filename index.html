@@ -33,34 +33,6 @@
   </section>
 
   <section id="services">
-    <h2>Services</h2>
-    <div class="service-section">
-      <h3>🎤 Music Performance</h3>
-      <p>Rasko Ras is a dynamic rapper and songwriter known for his authentic storytelling and engaging performances. His music seamlessly blends introspective lyrics with captivating beats, resonating with a diverse audience.</p>
-    
-      <h4>Notable Tracks:</h4>
-      <ul class="music-list">
-        <li><strong>"Never Easy" </strong>– An evocative track that delves into life's challenges, showcasing Rasko's lyrical depth and emotive delivery. <a href="https://music.amazon.com/artists/B0DZFR1FMV/rasko-ras?utm_source=chatgpt.com" target="_blank">Listen on Amazon</a></li>
-        <li><strong>"Am High"</strong> – A high-energy anthem reflecting aspirations and the pursuit of greatness, highlighting his versatility as an artist. <a href="https://music.apple.com/hu/artist/rasko/1690539225?utm_source=chatgpt.com" target="_blank">Listen on Apple Music</a></li>
-      </ul>
-      <h4>Music Video:</h4>
-    <p>Experience the visual storytelling of Rasko Ras in the official music video for "Window":</p>
-    <a href="https://www.youtube.com/watch?v=puyl-7aScpo&utm_source=chatgpt.com" target="_blank">
-      <img src="assets/window-video-thumbnail.jpg" alt="Rasko Ras Window Music Video" class="music-video-thumbnail" />
-    </a>
-    <h4>Connect and Listen:</h4>
-      <div class="music-links">
-        <a href="https://www.youtube.com/channel/UCOOneOMQnrkNyTUU6Do1RXA" target="_blank">YouTube</a>
-        <a href="https://music.apple.com/za/artist/rasko-ras/1804650070" target="_blank">iTunes</a>
-        <a href="https://open.spotify.com/artist/1KAy88FZczBl7R9Y5Ox8xc" target="_blank">Spotify</a>
-        <a href="https://www.amazon.com/music/player/artists/B0DZFR1FMV/rasko-ras" target="_blank">Amazon Music</a>
-    </div>
-    <h4>Stay Updated:</h4>
-    <div class="social-links">
-      <a href="https://www.facebook.com/RaskoRas/" target="_blank">Facebook</a>
-      <a href="https://www.instagram.com/raskoras_/" target="_blank">Instagram</a>
-    </div>
-    </div>
     <div class="service-section">
       <h3>💻 Software Projects</h3>
       <p>I build reliable, scalable web and mobile applications tailored to client needs. From backend systems to responsive UI, I deliver full-stack solutions with clean architecture and robust testing.</p>
@@ -76,6 +48,34 @@
       <a href="https://github.com/raskoprogramer" target="_blank">GitHub</a>
       <a href="https://gopathothe.co.za" target="_blank">Gopathothe PTY LTD</a>
     </div>
+  </section>
+  <section>
+    <div class="service-section">
+      <h3>🎤 Music Performance</h3>
+      <p>Rasko Ras is a dynamic rapper and songwriter known for his authentic storytelling and engaging performances. His music seamlessly blends introspective lyrics with captivating beats, resonating with a diverse audience.</p>
+    
+      <h4>Notable Tracks:</h4>
+      <ul class="music-list">
+        <li><strong>"Never Easy" </strong>– An evocative track that delves into life's challenges, showcasing Rasko's lyrical depth and emotive delivery. <a href="https://open.spotify.com/track/4EoLxgH9JjAwxCcXRgeodJ?si=46135922edec42ed" target="_blank">Listen on Spotify</a></li>
+      </ul>
+      <!-- <h4>Music Video:</h4>
+    <p>Experience the visual storytelling of Rasko Ras in the official music video for "Window":</p>
+    <a href="https://www.youtube.com/watch?v=puyl-7aScpo&utm_source=chatgpt.com" target="_blank">
+      <img src="assets/window-video-thumbnail.jpg" alt="Rasko Ras Window Music Video" class="music-video-thumbnail" /> -->
+    </a>
+    <h4>Connect and Listen:</h4>
+      <div class="music-links">
+        <a href="https://www.youtube.com/channel/UCOOneOMQnrkNyTUU6Do1RXA" target="_blank">YouTube</a>
+        <a href="https://music.apple.com/za/artist/rasko-ras/1804650070" target="_blank">iTunes</a>
+        <a href="https://open.spotify.com/artist/1KAy88FZczBl7R9Y5Ox8xc" target="_blank">Spotify</a>
+        <a href="https://www.amazon.com/music/player/artists/B0DZFR1FMV/rasko-ras" target="_blank">Amazon Music</a>
+    </div>
+    <h4>Stay Updated:</h4>
+    <div class="social-links">
+      <a href="https://www.facebook.com/RaskoRas/" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/raskoras_/" target="_blank">Instagram</a>
+    </div>
+    </div>
   </div>
   </section>
 
@@ -84,9 +84,13 @@
     <form id="contact-form">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
+      <!-- <label for="subject">Subject:</label> -->
+      <select id="subject" name="subject" required>
+      <option value="" disabled selected>Select a subject</option>
+      <option value="Music">Music</option>
+      <option value="Programming">Programming</option></select>
       <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
+      <button type="submit">Send</button></form>
     <p id="form-status"></p>
   </section>
 

@@ -1,5 +1,5 @@
 (function () {
-    emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
+    emailjs.init("aQGo-Oe-LBT29FNy0"); // Replace with your EmailJS user ID
   })();
   
   // EmailJS form handler
@@ -9,7 +9,7 @@
     const formStatus = document.getElementById("form-status");
     formStatus.textContent = "Sending...";
   
-    emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+    emailjs.sendForm("service_7a1n93x", "template_smqm2fq", this)
       .then(() => {
         formStatus.textContent = "Message sent successfully!";
         this.reset();
