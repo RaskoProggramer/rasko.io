@@ -264,4 +264,8 @@ form select {
     border-radius: 6px;
     font-size: 1rem;
 }
+
+p {
+    text-align: center;
+  }
   
