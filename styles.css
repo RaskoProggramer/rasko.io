@@ -268,4 +268,17 @@ form select {
 p {
     text-align: center;
   }
+
+li {
+    text-align: center;
+  
+}
+
+ul, ol {
+    list-style-position: inside;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+  
   
