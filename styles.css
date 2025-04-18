@@ -269,7 +269,7 @@ p {
     text-align: center;
   }
 
-li {
+li, a {
     text-align: center;
   
 }
